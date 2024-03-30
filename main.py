@@ -1,9 +1,12 @@
-from config import cursor, connection
+from user import User
 runing = True
 while runing:
-    input = input("$ ")
-    if input == "\\q":
+    command = input("$ ")
+    if command == 'sign up':
+        user = User('users')
+        args = user.sign_up_req_args
+        for key in args:
+            args[key] = input(f"Enter {key} : ")
+        user.sign_up(**args)
+    elif command == "\\q":
         runing = False
-
-
-connection.close()
