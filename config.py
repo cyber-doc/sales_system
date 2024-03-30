@@ -1,9 +1,8 @@
-import mysql.connector as mysql
+
 config = {
+    'database': 'sales_system',
     'user': 'root',
     'password': 'Root@1234',
     'host': 'localhost',
-    'database': 'sales_system'
+    'port': 5432
 }
-connection = mysql.connect(**config)
-cursor = connection.cursor()
