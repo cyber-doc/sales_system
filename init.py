@@ -11,6 +11,7 @@ tables['users'] = (
       create_date timestamp NOT NULL,
       last_update timestamp NOT NULL,
       PRIMARY KEY (id)
+      UUNIQUE KEY (email)
     ) """)
 
 
