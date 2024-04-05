@@ -1,1 +1,1 @@
-it is a sales system managment !!!
+this is an authorization system devloped by only python!!
